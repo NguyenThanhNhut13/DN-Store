@@ -8,13 +8,66 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="/CSS/main.css">
     <link rel="stylesheet" href="/CSS/base.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./CSS/font/fontawesome-free-6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <img class="header__navbar-logo" src="img/logo.webp">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-face-smile"></i>
+                                Quản lý tin
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-has--order header__navbar-item--no-opacity">
+                            <i class="header__navbar-icon fa-solid fa-bag-shopping"></i>
+                            Đơn Hàng
+                            <!-- Đơn hàng -->
+                            <div class="header__order">
+                                <div class="header__sale-order">Đơn mua</div>
+                                <hr>
+                                <div class="header__purchase-order">Đơn bán</div>
+                            </div>
 
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-sharp fa-regular fa-comment-dots"></i>
+                                Chat
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <i class="header__navbar-icon fa-sharp fa-regular fa-bell"></i>
+                            Thông báo
+                            <div class="header__notify">
+                                <heaader class="header__notify-header">
+                                    <h3>THÔNG BÁO MỚI</h3>
+                                </heaader>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./img/notify-item.png" alt="" class="header__notify-img" style="width: 50px;">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-info-name">Sách lập trình Java</span>
+                                                <span class="header__notify-info-description">Mô tả ách lập trình Java</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <i class="header__navbar-icon fa-regular fa-circle-user"></i>
+                            Tài khoản
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <div class="container">
@@ -22,8 +75,10 @@
         </div>
 
         <footer class="footer">
-            
+
         </footer>
     </div>
+
+    <script src="./JS/main.js"></script>
 </body>
 </html>

@@ -16,7 +16,7 @@ html {
 }
 
 .grid {
-    width: 1200px;
+    width: 960px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -28,4 +28,13 @@ html {
 .grid_row {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }to {
+        opacity: 1;
+    }
 }
