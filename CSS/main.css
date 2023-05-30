@@ -1,10 +1,13 @@
 .wrapper{
     width: 100%;
     background-color: #f4f4f4;
+    position: relative;
 }
 header {
     height: 94px;
     background: #ffba00;
+    top: 0;
+    position: sticky;
 }
 .grid{
     padding: 0 12px;
@@ -271,12 +274,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f4f4f4;
 }
 .main-content{
     width: 960px;
-    background-color: var(--white-color);
 }
 .banner{
+    background-color: var(--white-color);
     padding: 12px;
 }
 .sub-banner{
@@ -302,4 +306,44 @@ header {
 .sub-banner-item i{
     font-size: 33px;
     color: #9BF3EE;
+}
+
+.category{
+    background-color: var(--white-color);
+    margin-top: 12px;
+    padding: 12px;
+}
+.category h2{
+    padding: 12px;
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+}
+.category-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    height: 280px;
+}
+.category-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 137px;
+    height: 140px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.category-item img{
+    width: 84px;
+    height: 84px;
+    border-radius: 20px;
+}
+.category-item span{
+    margin-top: 8px;
+    max-width: 84px;
+    line-height: 1.29;
+    text-align: center;
 }
