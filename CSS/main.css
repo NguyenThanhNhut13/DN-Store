@@ -1,6 +1,13 @@
+.wrapper{
+    width: 100%;
+    background-color: #f4f4f4;
+}
 header {
-    height: 90px;
+    height: 94px;
     background: #ffba00;
+}
+.grid{
+    padding: 0 12px;
 }
 .header__navbar {
     display: flex;
@@ -257,4 +264,42 @@ header {
     font-weight: 700;
     font-size: 1.2rem;
     margin-left: 10px;
+}
+
+/* Container */
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-content{
+    width: 960px;
+    background-color: var(--white-color);
+}
+.banner{
+    padding: 12px;
+}
+.sub-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+.sub-banner-item{
+    width: 104px;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 13px;
+}
+.sub-banner-item:hover{
+    cursor: pointer;
+}.sub-banner-item p:hover{
+    color: #75a8cd;
+}
+.sub-banner-item img{
+    width: 33px;
+}
+.sub-banner-item i{
+    font-size: 33px;
+    color: #9BF3EE;
 }
