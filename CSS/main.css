@@ -370,12 +370,12 @@ header {
     align-items: center;
     width: 191px;
     height: 314px;
-    padding: 12px;
+    padding: 13px;
     border-top: 1px solid rgb(248, 245, 245);
 }
 .feature-item:hover{
     border: 1px solid lightgray;
-    box-shadow: 0 0 2px gray;
+    box-shadow: 0 0 3px gray;
 }
 .feature-item img{
     width: 167px;
@@ -393,6 +393,12 @@ header {
 }
 .feature-item-name i{
     font-size: 16px;
+}
+.feature-item img:hover, .feature-item-name:hover{
+    cursor: pointer;
+}
+.feature-item-name span:hover{
+    color: #75a8cd;
 }
 .feature-item-price{
     color: #d0021b;
@@ -416,6 +422,20 @@ header {
     height: 2px;
     border-radius: 50%;
     background-color: #9b9b9b;
+}
+.loadMore{
+    text-align: center;
+}
+.loadMore button:hover{
+    cursor: pointer;
+}
+.loadMore button{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(56, 105, 159);
+    border: none;
+    background: none;
+    margin: 10px 0;
 }
 
 
