@@ -275,6 +275,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #f4f4f4;
+    flex-wrap: wrap;
 }
 .main-content{
     width: 960px;
@@ -503,4 +504,113 @@ footer address{
     text-align: center;
 }
 
+/* Login */
+
+.container ul{
+    list-style: none;
+    display: flex;
+    margin: 0 172px;
+    font-size: 1.2rem;
+    width: 936px;
+}
+.container ul li{
+    display: flex;
+    align-items: center;
+}
+.container ul li span{
+    margin: 0 4px;
+    font-size: 6px;
+}
+.container ul li a{
+    color: #1956b8;
+    text-decoration: none;
+}
+.auth-form{
+    width: 340px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    margin-bottom: 30px;
+    background-color: var(--white-color);
+}
+.auth-form__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.auth-form__header div h3{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.auth-form__header div p{
+    font-size: 1.2rem;
+    color: #8c8c8c;
+    margin-top: 5px;
+}
+.auth-form__header img{
+    width: 87px;
+}
+.auth-form__form input{
+    width: 100%;
+    height: 36px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid silver;
+    margin: 9px 0;
+    outline: none;
+}
+.auth-form__form input:hover{
+    border-color: gray
+}
+.auth-form form button{
+    width: 100%;
+    margin: 9px 0;
+    color: var(--white-color);
+    background-color: #f80;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+.auth-form form button:hover{
+    cursor: pointer;
+    opacity: 0.4;
+}
+.auth-form__forgot{
+    text-align: center;
+}
+.auth-form__forgot a{
+    text-decoration: none;
+    color: #2a70df;
+    font-size: 1.2rem;
+}
+.auth-form-choice{
+    margin-top: 40px;
+    color: #8c8c8c;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.auth-form__socials div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+.auth-form__socials div li:nth-child(2){
+    margin: 0 16px;
+}
+.auth-form__socials-link img{
+    font-size: 40px;
+}
+.auth-form__socials-text{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.auth-form__socials-text a{
+    text-decoration: none;
+    color: #1956b8;
+}
 

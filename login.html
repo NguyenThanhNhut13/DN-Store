@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/font/fontawesome-free-6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <img class="header__navbar-logo" src="img/logo.webp">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-face-smile"></i>
+                                Quản lý tin
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-has--order header__navbar-item--no-opacity">
+                            <i class="header__navbar-icon fa-solid fa-bag-shopping"></i>
+                            Đơn Hàng
+                            <!-- Đơn hàng -->
+                            <div class="header__order">
+                                <div class="header__sale-order">Đơn mua</div>
+                                <hr>
+                                <div class="header__purchase-order">Đơn bán</div>
+                            </div>
+
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-sharp fa-regular fa-comment-dots"></i>
+                                Chat
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__notify-item--has-notify">
+                            <i class="header__navbar-icon fa-sharp fa-regular fa-bell"></i>
+                            Thông báo
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>THÔNG BÁO MỚI</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./img/notify_item.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-info-name">Sách lập trình Java</span>
+                                                <span class="header__notify-info-description">Mô tả sách lập trình Java</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link header__notify-item--viewed">
+                                            <img src="./img/notify_item2.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-info-name">Giáo trình triết học Mac-LêninGiáo trình triết học Mac-Lênin</span>
+                                                <span class="header__notify-info-description">Mô tả giáo trình triết học Mac-Lênin</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./img/notify_item3.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-info-name">Sách luyện thi Ielts</span>
+                                                <span class="header__notify-info-description">Mô tả sách luyện thi Ielts</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="login.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-circle-user"></i>
+                                Tài khoản
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="row">
+                    <div class="search">
+                        <input type="text" placeholder="Tìm kiếm trên DN Store">
+                        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </div>
+                    <div class="post">
+                        <div> <i class="fa-regular fa-pen-to-square"></i></div>
+                        <span>ĐĂNG TIN</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">Trang chủ</a>
+                    <span>>></span>
+                </li>
+                <li>
+                    <p>&nbsp;Đăng nhập</p>
+                </li>
+            </ul>
+            <div class="auth-form">
+                <form>
+                    <div class="auth-form__header">
+                        <div>
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <p>Chào bạn quay lại</p>
+                        </div>
+                        <img src="https://static.chotot.com/storage/assets/LOGIN/logo.svg">
+                    </div>
+                    <div class="auth-form__form">
+                        <input type="text" class="auth-form__input" placeholder="Nhập SĐT của bạn">
+                        <p class="auth-form__form-error"></p>
+                    </div>
+                    <div class="auth-form__form">
+                        <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                        <p class="auth-form__form-error"></p>
+                    </div>
+                    <button type="button">Đăng nhập</button>
+                </form>
+                <p class="auth-form__forgot">
+                    <a href="#">Bạn quên mật khẩu?</a>
+                </p>
+                <p class="auth-form-choice">hoặc sử dụng</p>
+                <div class="auth-form__socials">
+                    <div>
+                        <li>
+                            <a class="auth-form__socials-link" href="#">
+                                <img src="https://static.chotot.com/storage/assets/LOGIN/facebook.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="auth-form__socials-link" href="#">
+                                <img src="https://static.chotot.com/storage/assets/LOGIN/google.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="auth-form__socials-link" href="#">
+                                <img src="https://static.chotot.com/storage/assets/LOGIN/apple.svg">
+                            </a>
+                        </li>
+                    </div>
+                    <p class="auth-form__socials-text">
+                        Chưa có tài khoản?
+                        <a href="" class="auth-form__socials-link">Đăng ký ngay</a>
+                    </p>
+                </div>            
+            </div>
+        </div>
+        <footer>
+            <div class="footer-list">
+                <div class="footer-item">
+                    <p class="footer-title">TẢI ỨNG DỤNG DN STORE</p>
+                    <div class="footer-download">
+                        <img class="qr-code" src="img/qr-code.webp">
+                        <div>
+                            <img src="https://static.chotot.com/storage/default/ios.svg">
+                            <img src="https://static.chotot.com/storage/default/android.svg">
+                            <img src="img/app-gallery.webp">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <p class="footer-title">HỖ TRỢ KHÁCH HÀNG</p>
+                    <ul>
+                        <li>Trung tâm trợ giúp</li>
+                        <li>An toàn mua bán</li>
+                        <li>Liên hệ hỗ trợ</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <p class="footer-title">VỀ DN STORE</p>
+                    <ul>
+                        <li>Giới thiệu</li>
+                        <li>Quy chế hoạt động sàn</li>
+                        <li>Chính sách bảo mật</li>
+                        <li>Giải quyết tranh chấp</li>
+                        <li>Tuyển dụng</li>
+                        <li>Truyền thông</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <p class="footer-title">LIÊN KẾT</p>
+                    <div class="footer-item-connect">
+                        <img src="https://static.chotot.com/storage/default/facebook.svg">
+                        <img src="https://static.chotot.com/storage/default/youtube.svg">
+                        <img src="https://static.chotot.com/storage/default/linkedin.svg">
+                    </div>
+                    <p class="footer-title">CHỨNG NHẬN</p>
+                    <img src="img/certificate.jpg">
+                </div>
+            </div>
+            <hr>
+            <address>
+                CÔNG TY TNHH DN STORE - Người đại diện theo pháp luật: Nguyễn Trọng Tấn; GPDKKD: 0312120782 do sở DH & KT TP.HCM cấp ngày 11/01/2013;<br>
+                GPMXH: 17/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 15/01/2019 - Chịu trách nhiệm nội dung: Trần Minh Ngọc. <a href="#">Chính sách sử dụng</a><br>
+                Địa chỉ: Số 2, Ngô Đức Kế, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam; Email: thanhnhutcu@gmail.com - Tổng đài CSKH: 19003003 (1.000đ/phút) 
+            </address>
+        </footer>
+        <script src="JS/main.js"></script>
+</body>
+</html>
+<!-- <div class="container">
+            div.
+            <div class="auth-form">
+                <div class="auth-form__header">
+                    <div>
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <p>Tạo tài khoản DN Store ngay</p>
+                    </div>
+                    <img src="./img/logo_register.png">
+                </div>
+                <div class="auth-form__form">
+                    <input type="text" class="auth-form__input" placeholder="Nhập tên của bạn">
+                </div>
+                <div class="auth-form__form">
+                    <input type="password" class="auth-form__input" placeholder="Nhập SĐT của bạn">
+                </div>
+                <div class="auth-form__form">
+                    <input type="text" class="auth-form__input" placeholder="Tạo một mật khẩu có ít nhất 5 ký tự">
+                </div>
+            </div>
+            <button class="btn-primary">Đăng ký</button>
+            <div class="auth-form__aside">
+                <p class="auth-form-policy-text">
+                    Bằng việc Đăng ký, bạn đã đồng ý với 
+                    <a href="" class="auth-form-policy-link">Điều khoản sử dụng</a>
+                    của Chợ tốt
+                </p>
+            </div>
+            <div class="auth-form__socials">
+                <p class="auth-form__socials-text-choice">hoặc sử dụng</p>
+                <a href="" class="auth-form__socials-link">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="" class="auth-form__socials-link">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+                <a href="" class="auth-form__socials-link">
+                    <i class="fa-brands fa-apple"></i>
+                </a>
+                <p class="auth-form__socials-text">
+                    Bạn đã có tài khoản?
+                    <a href="" class="auth-form__socials-link">Đăng nhập</a>
+                </p>
+            </div>
+        </div> -->
